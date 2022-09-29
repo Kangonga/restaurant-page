@@ -1,0 +1,60 @@
+#image{
+    background-image: url('./background.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body{
+    background-color: lightgray;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#content{
+    position: absolute;
+    top: 3rem;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+.navbar >li{
+    list-style: none;
+    cursor: pointer;
+}
+.navbar > li:hover{
+    transform: translateY(-2px);
+    text-decoration: underline;
+    text-decoration-color: gray;
+    transition : all 500ms;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.about {
+    position: relative;
+    top: 25vh;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 2rem;
+}
+.displayFood{
+    position: relative;
+    top: 10vh;
+    width: 50%;
+    height: 30vh;
+    margin: auto;
+    margin-top: 3rem;
+}
+.disp{
+    width: 30%;
+    /* border: 2px solid white; */
+    border-radius: 30px;
+}
