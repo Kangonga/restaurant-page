@@ -49,3 +49,27 @@
   margin: auto;
   border-radius: 50%;
 }
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  gap: 1rem;
+  /* justify-items: center; */
+  align-items: center;
+  height: 40vh;
+  gap: 1rem;
+}
+.textarea{
+  display: flex;
+  align-items: center;
+  resize: none;
+}
+textarea{
+  resize: none;
+}
+label {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
