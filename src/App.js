@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './NavBar';
 import Mid from './Mid';
 import Contacts from './Contacts';
-
+import Menu from './Menu';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <NavBar />
       {/* <Mid /> */}
       <Contacts/>
+      {/* <Menu/> */}
     </>
   );
 }
