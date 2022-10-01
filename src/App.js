@@ -7,7 +7,6 @@ import Menu from './Menu';
 import { useState } from 'react';
 
 function App() {
-  // const[bgcCover,setBgCover] = useState("cover");
   const [currentTab, setTab] = useState("Home");
   return (
     <div className={currentTab=="Menu"?"contain":"cover"}>

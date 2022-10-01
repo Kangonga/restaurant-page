@@ -128,10 +128,11 @@ label:hover{
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
-  border: 2px solid blue;
+  /* border: 2px solid wheat; */
   overflow: hidden;
   align-items: center;
   cursor: pointer;
+  border-radius: 30%;
 
 }
 .foodImg{
@@ -142,7 +143,15 @@ label:hover{
   font-size: 1.5rem;
   width: 50%;
   margin: auto;
-  border: 2px solid wheat;
+  /* border: 2px solid wheat; */
   background-color: wheat;
-  border-radius: 40%;
+}
+.navMeal{
+  width: 70%;
+  margin: auto;
+  gap: 1rem;
+}
+.navMeal >li {
+  /* background-color: wheat; */
+  border-radius:10%;
 }
