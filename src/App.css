@@ -1,10 +1,11 @@
-/* #root{
+ #root{
   background: url(./background.jpg);
   background-size: cover;
-  background-repeat:repeat-y;
-  min-height: 100vh;
+  /* background-repeat:repeat-y;*/
+  height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
+ overflow-x: hidden;
+ overflow-y: scroll;
 }
 */
 .cover{
@@ -154,4 +155,7 @@ label:hover{
 .navMeal >li {
   /* background-color: wheat; */
   border-radius:10%;
+}
+.contactHero{
+  text-align: center;
 }

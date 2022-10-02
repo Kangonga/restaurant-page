@@ -6,6 +6,7 @@ export default function Contacts(){
     }
     return(
         <form onSubmit={handleFormSubmit} className="form">
+            <div className="contactHero">We would like to hear from you!</div>
              <label className="fname">
                <span> First Name: </span> <input type="text" className="firstName" />
             </label>

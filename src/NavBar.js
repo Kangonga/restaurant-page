@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function NavBar({setTab, currentTab}){
     function handleClick(event){
@@ -8,9 +9,9 @@ export default function NavBar({setTab, currentTab}){
       }
     return(
         <div className="navbar">
-            <li onClick={handleClick}>Home</li>
-            <li onClick={handleClick}>Menu</li>
-            <li onClick={handleClick}>Contacts</li>
+            <Link to="" onClick={handleClick}>Home</Link>
+            <Link Link to="menu"onClick={handleClick}>Menu</Link>
+            <Link Link to="contacts"onClick={handleClick}>Contacts</Link>
         </div>
     )
 }

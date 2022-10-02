@@ -5,16 +5,20 @@ import Mid from './Mid';
 import Contacts from './Contacts';
 import Menu from './Menu';
 import { useState } from 'react';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 function App() {
   const [currentTab, setTab] = useState("Home");
   return (
-    <div className={currentTab=="Menu"?"contain":"cover"}>
+    <Router className={currentTab=="Menu"?"contain":"cover"}>
       <NavBar currentTab = {currentTab} setTab = {setTab}/>
-      { currentTab=="Home" && <Mid />}
-      {currentTab=="Contacts" &&  <Contacts/>}
-      { currentTab=="Menu" && <Menu/> }
-    </div>
+      <Routes>
+      <Route path="/" element={<Mid />} />
+      <Route path="/menu" element={<Menu />} />
+       <Route path="/contacts" element={<Contacts />} />
+      </Routes>
+      
+    </Router>
   );
 }
 
