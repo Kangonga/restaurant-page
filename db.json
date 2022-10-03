@@ -26,6 +26,13 @@
       "email": "g@gm",
       "people": "3",
       "id": 2
+    },
+    {
+      "fname": "deployed",
+      "lname": "gh-pages",
+      "email": "me@me",
+      "people": "1",
+      "id": 3
     }
   ],
   "profile": {
