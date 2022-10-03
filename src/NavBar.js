@@ -9,10 +9,10 @@ export default function NavBar({setTab, currentTab}){
       }
     return(
         <div className="navbar">
-            <Link className="nav"to ="restaurant-page/home" onClick={handleClick}>Home</Link>
-            <Link className="nav"to="restaurant-page/menu"onClick={handleClick}>Menu</Link>
-            <Link className="nav"to="restaurant-page/contacts"onClick={handleClick}>Contacts</Link>
-            <Link className="nav"to="restaurant-page/reservations"onClick={handleClick}>Reservations</Link>
+            <Link className="nav"to ="home" onClick={handleClick}>Home</Link>
+            <Link className="nav"to="menu"onClick={handleClick}>Menu</Link>
+            <Link className="nav"to="contacts"onClick={handleClick}>Contacts</Link>
+            <Link className="nav"to="reservations"onClick={handleClick}>Reservations</Link>
         </div>
     )
 }
