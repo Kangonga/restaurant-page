@@ -14,7 +14,7 @@ function App() {
     <Router className={currentTab=="Menu"?"contain":"cover"}>
       <NavBar currentTab = {currentTab} setTab = {setTab}/>
       <Routes>
-      <Route path="/" element={<Mid />} />
+      <Route exact path="/" element={<Mid />} />
       <Route path="/menu" element={<Menu />} />
       <Route path="/contacts" element={<Contacts />} />
       <Route path="/reservations" element={<Reservations />} />
