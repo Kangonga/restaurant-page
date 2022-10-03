@@ -1,11 +1,11 @@
-import{ useState} from "react"
-export default function Contacts(){
+import { useState } from "react";
 
+export default function Reservations(){
     function handleFormSubmit(event){
         event.preventDefault();
         event.target.reset()
         console.log(formData)
-        let url="http://localhost:8000/contacts"
+        let url="http://localhost:8000/reservations"
         let params = {
         method: "POST",
         headers:{"Content-Type": "application/json"},
@@ -13,17 +13,19 @@ export default function Contacts(){
             "fname" : formData.fname,
             "lname" : formData.lname,
             "email" : formData.email,
-            "comment" : formData.comment,
+            "people" : formData.people,
     }),
     }
         setFormData({
             fname : "",
             lname : "",
             email : "",
-            comment : "",
+            people : 0,
     })
     fetch(url, params)
     }
+    
+    
     const[formData,setFormData] = useState({
         fname : "",
         lname : "",
@@ -36,21 +38,29 @@ export default function Contacts(){
         })
         }
     return(
+        <>
         <form onSubmit={handleFormSubmit} className="form">
-            <div className="contactHero">We would like to hear from you!</div>
+            <div className="contactHero">
+            <h3>Book a table with us today!</h3>
+
+            </div>
              <label className="fname">
-               <span> First Name: </span> <input name="fname"onChange={handleChange}value={formData.fname}type="text" className="firstName" />
+               <span> First Name: </span> <input name="fname"value={formData.fname} onChange={handleChange}type="text" className="firstName" />
             </label>
             <label className="lname">
-                <span>Last Name: </span><input name="lname"onChange={handleChange}value={formData.lname}type="text" className="lastName" />
+                <span>Last Name: </span><input name="lname"value={formData.lname} onChange={handleChange} type="text" className="lastName" />
+            </label>
+            <label className="lname">
+                <span>Number of people: </span><input name="people"value={formData.people} onChange={handleChange} type="number" className="lastName" />
             </label>
             <label className="email">
-               <span> Email: </span><input name="email"onChange={handleChange}value={formData.email} type="email" className="email" placeholder="Email:" />
+               <span> Email: </span><input name="email"value={formData.email} onChange={handleChange} type="email" className="email" placeholder="Email:" />
             </label>
-            <label className="textarea">
-                <span>Your Comments:</span> <textarea name="comment"onChange={handleChange}value={formData.comment}type="textarea"></textarea>
+            <label className="date">
+                <span>Date:</span> <input name="date" onChange={handleChange} type="date"></input>
             </label>
             <button className="submit">Submit</button>
         </form>
+        </>
     )
 }

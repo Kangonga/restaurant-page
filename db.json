@@ -1,0 +1,34 @@
+{
+  "contacts": [
+    {
+      "fname": "fdasvdsv",
+      "lname": "dvsv",
+      "email": "vdsv@gf",
+      "id": 1
+    },
+    {
+      "fname": "dsv",
+      "lname": "saa",
+      "email": "vd@bfd",
+      "comment": "sdvs",
+      "id": 2
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "fname": "kj",
+      "lname": "gb",
+      "email": "g@gm",
+      "people": "3",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

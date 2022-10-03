@@ -6,6 +6,8 @@
   width: 100vw;
  overflow-x: hidden;
  overflow-y: scroll;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 */
 .cover{
@@ -36,13 +38,21 @@
     top: 2rem;
     margin-bottom: 2rem;
 }
-.navbar >li{
+.nav, nav:hover, nav:focus, nav:active {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar >.nav, .navMeal{
   list-style: none;
   cursor: pointer;
+  color: black;
 }
-.navbar > li:hover{
+li{
+  list-style: none;
+}
+.nav:hover, .navMeal>li:hover{
   transform: translateY(-3px);
-  text-decoration: underline;
+  text-decoration: underline; 
   text-decoration-color: gray;
   transition : ease 500ms;
 }
@@ -138,6 +148,7 @@ label:hover{
 }
 .foodImg{
   width: 50%;
+  border-radius: 10%;
 }
 .menuTitle{
   text-align: center;

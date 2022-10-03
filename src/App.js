@@ -6,6 +6,7 @@ import Contacts from './Contacts';
 import Menu from './Menu';
 import { useState } from 'react';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import Reservations from './Reservations';
 
 function App() {
   const [currentTab, setTab] = useState("Home");
@@ -15,7 +16,9 @@ function App() {
       <Routes>
       <Route path="/" element={<Mid />} />
       <Route path="/menu" element={<Menu />} />
-       <Route path="/contacts" element={<Contacts />} />
+      <Route path="/contacts" element={<Contacts />} />
+      <Route path="/reservations" element={<Reservations />} />
+
       </Routes>
       
     </Router>

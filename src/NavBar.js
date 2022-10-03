@@ -9,9 +9,10 @@ export default function NavBar({setTab, currentTab}){
       }
     return(
         <div className="navbar">
-            <Link to="" onClick={handleClick}>Home</Link>
-            <Link Link to="menu"onClick={handleClick}>Menu</Link>
-            <Link Link to="contacts"onClick={handleClick}>Contacts</Link>
+            <Link className="nav" to="" onClick={handleClick}>Home</Link>
+            <Link className="nav"to="menu"onClick={handleClick}>Menu</Link>
+            <Link className="nav"to="contacts"onClick={handleClick}>Contacts</Link>
+            <Link className="nav" to="reservations"onClick={handleClick}>Reservations</Link>
         </div>
     )
 }
