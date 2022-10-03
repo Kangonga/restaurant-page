@@ -1,7 +1,6 @@
  #root{
   background: url(./background.jpg);
   background-size: cover;
-  /* background-repeat:repeat-y;*/
   height: 100vh;
   width: 100vw;
  overflow-x: hidden;
@@ -115,9 +114,7 @@ label {
   justify-content: space-between;
 }
 label >span {
-  /* width: 34%; */
   display: inline;
-  /* border: 2px solid saddlebrown; */
 }
 label:hover{
   background-color: wheat;
@@ -139,7 +136,6 @@ label:hover{
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
-  /* border: 2px solid wheat; */
   overflow: hidden;
   align-items: center;
   cursor: pointer;
@@ -155,7 +151,6 @@ label:hover{
   font-size: 1.5rem;
   width: 50%;
   margin: auto;
-  /* border: 2px solid wheat; */
   background-color: wheat;
 }
 .navMeal{
@@ -164,7 +159,6 @@ label:hover{
   gap: 1rem;
 }
 .navMeal >li {
-  /* background-color: wheat; */
   border-radius:10%;
 }
 .contactHero{
