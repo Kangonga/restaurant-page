@@ -5,7 +5,7 @@ import Mid from './Mid';
 import Contacts from './Contacts';
 import Menu from './Menu';
 import { useState } from 'react';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import {BrowserRouter as Router, Routes, Route, Redirect} from "react-router-dom"
 import Reservations from './Reservations';
 
 function App() {
@@ -14,10 +14,11 @@ function App() {
     <Router className={currentTab=="Menu"?"contain":"cover"}>
       <NavBar currentTab = {currentTab} setTab = {setTab}/>
       <Routes>
-      <Route exact path="/" element={<Mid />} />
-      <Route path="/menu" element={<Menu />} />
-      <Route path="/contacts" element={<Contacts />} />
-      <Route path="/reservations" element={<Reservations />} />
+      <Route exact path="/home" element={<Mid />} />
+      <Route exact path="/menu" element={<Menu />} />
+      <Route exact path="/contacts" element={<Contacts />} />
+      <Route exact path="/reservations" element={<Reservations />} />
+      <Route path="*" element={<Mid/>} />
 
       </Routes>
       
