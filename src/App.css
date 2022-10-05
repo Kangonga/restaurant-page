@@ -164,3 +164,16 @@ label:hover{
 .contactHero{
   text-align: center;
 }
+.search{
+  width: 60%;
+  margin: auto;
+}
+.search >input {
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+.separate {
+  width: 100vh;
+  height: 2vh;
+}

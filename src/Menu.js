@@ -2,6 +2,7 @@ import { useState, useEffect} from "react"
 
 export default function Menu(){
     const [meal,setMeal] = useState('bbqs')
+    const [searchText,setSearchText] = useState('')
     const url = `https://ig-food-menus.herokuapp.com/${meal}`
     const [food,setFood] = useState([])
     useEffect(()=>{
@@ -14,8 +15,23 @@ export default function Menu(){
     function newMeal(e){
         setMeal(e.target.className)
     }
+    function searchMeal(e){
+        setFood(e.target.value)
+    }
+    function handleSearch(e){
+        setSearchText(()=>e.target.value)
+        setFood(food.filter((foodItem)=>{
+        if(e.target.value===""){
+            return setFood(()=>food)
+        }
+        else{
+           return foodItem.name.includes(e.target.value)
+        }}))
+    }
     return(
         <div>
+            <div className="search"><input value={searchText} onChange={(e)=>handleSearch(e)} type="text" placeholder="search for a meal"></input></div>
+            <div className="separate"></div>
             <div className="menuTitle">Here's the menu!</div>
             <div className="navbar navMeal">
                 <li onClick={newMeal} className="breads">Breakfast</li>
