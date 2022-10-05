@@ -16,21 +16,15 @@ export default function Menu(){
         setMeal(e.target.className)
     }
     function searchMeal(e){
-        setFood(e.target.value)
+        // setFood(e.target.value)
+        console.log('e.target.value = ' + e.target.value)
     }
     function handleSearch(e){
         setSearchText(()=>e.target.value)
-        setFood(food.filter((foodItem)=>{
-        if(e.target.value===""){
-            return setFood(()=>food)
-        }
-        else{
-           return foodItem.name.includes(e.target.value)
-        }}))
     }
     return(
         <div>
-            <div className="search"><input value={searchText} onChange={(e)=>handleSearch(e)} type="text" placeholder="search for a meal"></input></div>
+            <div className="search"><input value={searchText} onChange={handleSearch} type="text" placeholder="search for a meal"></input></div>
             <div className="separate"></div>
             <div className="menuTitle">Here's the menu!</div>
             <div className="navbar navMeal">
@@ -39,7 +33,16 @@ export default function Menu(){
                 <li onClick={newMeal} className="fried-chicken">Dinner</li>
             </div>
             <div className="foodContainer">
-            {food.map(item=><div key={item.id}
+            {food.filter((foodItem)=>{
+                 if(searchText==""){
+                    return food
+                }
+                else{
+                    return(
+                        foodItem.name.toLowerCase().includes(searchText.toLowerCase())
+                    )
+                }
+            }).map(item=><div key={item.id}
             className="item">
                 <img className="foodImg"src={item.img}></img>
                 <div >{item.name}</div>
