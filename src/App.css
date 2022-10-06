@@ -89,6 +89,7 @@ li{
   gap: 1rem;
   margin-top: 15vh;
   font-size: 1.2rem;
+  border: 2px solid wheat;
 }
 .submit {
   width: 59%;
@@ -101,9 +102,11 @@ li{
   display: flex;
   align-items: center;
   resize: none;
+  padding: 10px;
 }
 textarea{
   resize: none;
+  padding: 10px;
 }
 label {
   display: flex;
@@ -112,6 +115,9 @@ label {
   width: 70%;
   margin: auto;
   justify-content: space-between;
+}
+label > input {
+  padding: 10px;
 }
 label >span {
   display: inline;
@@ -151,7 +157,7 @@ label:hover{
   font-size: 1.5rem;
   width: 50%;
   margin: auto;
-  background-color: wheat;
+  /* background-color: wheat; */
 }
 .navMeal{
   width: 70%;
@@ -172,6 +178,10 @@ label:hover{
   width: 60%;
   margin: auto;
   display: block;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1rem;
 }
 .separate {
   width: 100vh;
