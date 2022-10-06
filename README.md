@@ -1,6 +1,92 @@
-# Getting Started with Create React App
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+<ul>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Contributors</a></li></ul>
+  </ol>
+</details>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+This project is a single page application for a restaurant.
+The website is built mainly with react.js, alongside Html,CSS and webpack for bundling of the assets<br>
+
+The project has four tabs accessed via four routes: the home route, menu route, contacts route and the reservations route.
+
+The significance of this project is:
+<ol>
+<li>It gives the restaurant a digital brand image, which is important in this digital age</li>
+<li> Increase market reach by appealing to the new customer frontier, which is the internet.
+</li>
+<li>Allow the restaurant to receive feedback which it may use to improve services delivered.</li>
+<li>Having a digital footprint is as important a marketing frontier as mainstream media, if not more. Moreover maintaining a website is much cheaper than running advertisement on mainstream media. You can also use google ads to increase your reach.
+</li>
+<li>A website also provides a platform to provide other services such as reservations, events and other services that can attract users and increase revenue growth.</li>
+</ol>
+
+### Built With
+
+Several technologies have been used in the design and implementation of this website.
+The technologies are:
+<ol>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>React Js</li>
+</ol>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+These are the steps required to use this project:
+
+### Prerequisites
+
+
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+* On windows PowerShell
+  ```
+  nvm install latest
+  ```
+
+### Installation
+
+1. Clone the repo
+  ```
+  git@github.com:Kangonga/restaurant-page.git
+  ```
+
+2. Install Dependencies
+  ```
+  npm install
+  ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 
 ## Available Scripts
 
@@ -27,44 +113,32 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run serve`
+This will start a local db.json server to store the data received from the contacts and reservations page.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- LICENSE -->
+## License
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<!-- CONTACT -->
+## Contact
 
-### Code Splitting
+Project Link: [git@github.com:Kangonga/restaurant-page.git](git@github.com:Kangonga/restaurant-page.git)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<!-- ACKNOWLEDGMENTS -->
+## Contributors
+Kevin Guchu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#top">back to top</a>)</p>
