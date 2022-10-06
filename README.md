@@ -68,7 +68,7 @@ These are the steps required to use this project:
   ```sh
   npm install npm@latest -g
   ```
-  On windows PowerShell
+* On windows PowerShell
   ```
   nvm install latest
   ```
@@ -76,13 +76,43 @@ These are the steps required to use this project:
 ### Installation
 
 1. Clone the repo
-  ``` git@github.com:Kangonga/restaurant-page.git```
+  ```
+  git@github.com:Kangonga/restaurant-page.git
+  ```
 
 2. Install Dependencies
-  ``` npm install ```
+  ```
+  npm install
+  ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+## Available Scripts
 
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+### `npm run serve`
+This will start a local db.json server to store the data received from the contacts and reservations page.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -99,7 +129,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Project Link: [https://github.com/SheeTabz/DigiHoteL](https://github.com/your_username/repo_name)
+Project Link: [git@github.com:Kangonga/restaurant-page.git](git@github.com:Kangonga/restaurant-page.git)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -107,11 +137,6 @@ Project Link: [https://github.com/SheeTabz/DigiHoteL](https://github.com/your_us
 
 <!-- ACKNOWLEDGMENTS -->
 ## Contributors
-<ol>
-<li>Salvato Luis = Team lead</li>
-<li>Tabitha shee = Team member</li>
-<li>Kevi Guchu = Team member</li>
-<li>Rhoda = Team member</li>
-</ol>
+Kevin Guchu
 
 <p align="right">(<a href="#top">back to top</a>)</p>
